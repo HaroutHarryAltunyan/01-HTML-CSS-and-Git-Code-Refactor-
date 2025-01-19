@@ -1,15 +1,18 @@
 /* Global Styles */
+/* Set box-sizing to border-box for all elements and remove padding and margin */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Set background color for the body */
 body {
     background-color: #d9dcd6;
 }
 
 /* Header Styles */
+/* Style the header section with padding, font-family, background color, and text color */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -17,15 +20,18 @@ body {
     color: #ffffff;
 }
 
+/* Style the header title with inline-block display and font size */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Style specific text in the header title with a different color */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Style the navigation section in the header */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -34,26 +40,31 @@ body {
     font-size: 20px;
 }
 
+/* Remove bullets from navigation list items */
 .header nav ul {
     list-style-type: none;
 }
 
+/* Display navigation list items inline and add spacing between them */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Style anchor tags to have white color and no underline */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
 /* General Text Styles */
+/* Set font size for all paragraph elements */
 p {
     font-size: 16px;
 }
 
 /* Hero Section */
+/* Style the hero section with height, width, margin, and a background image */
 .hero {
     height: 800px;
     width: 100%;
@@ -64,17 +75,20 @@ p {
 }
 
 /* Image Alignment Utility Classes */
+/* Float elements to the left and add spacing on the right */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Float elements to the right and add spacing on the left */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
 /* Main Content */
+/* Style the main content area with width, inline-block display, and left margin */
 .content {
     width: 75%;
     display: inline-block;
@@ -82,6 +96,7 @@ p {
 }
 
 /* Benefits Section */
+/* Style the benefits section with padding, margin, font-family, background color, and text color */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -94,15 +109,18 @@ p {
 }
 
 /* Shared Benefit Styles */
+/* Add bottom margin to each article within the benefits section */
 .benefits article {
     margin-bottom: 32px;
 }
 
+/* Center and add spacing to benefit section headings */
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Center images within the benefits section and set a maximum width */
 .benefits img {
     display: block;
     margin: 10px auto;
@@ -110,6 +128,7 @@ p {
 }
 
 /* Section Styles */
+/* Style specific sections with margin, padding, height, font-family, background color, and text color */
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
@@ -121,12 +140,14 @@ p {
     color: #ffffff;
 }
 
+/* Set a maximum height for images within these sections */
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
 }
 
+/* Style headings in these sections with bottom margin and font size */
 .search-engine-optimization h2,
 .online-reputation-management h2,
 .social-media-marketing h2 {
@@ -135,6 +156,7 @@ p {
 }
 
 /* Footer */
+/* Style the footer section with padding, font-family, and center alignment */
 .footer {
     padding: 30px;
     clear: both;
@@ -142,6 +164,7 @@ p {
     text-align: center;
 }
 
+/* Set font size for footer headings */
 .footer h2 {
     font-size: 20px;
 }
