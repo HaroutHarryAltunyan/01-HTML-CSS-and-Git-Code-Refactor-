@@ -6,18 +6,33 @@
     margin: 0;
 }
 
+/* Define CSS Variables for Colors and Typography */
+:root {
+    /* Colors */
+    --primary-color: #2a607c;
+    --secondary-color: #2589bd;
+    --tertiary-color: #0072bb;
+    --background-color: #d9dcd6;
+    --text-color: #ffffff;
+
+    /* Typography */
+    --font-primary: 'Trebuchet MS', Arial, sans-serif;
+    --font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-size-base: 16px;
+}
+
 /* Set background color for the body */
 body {
-    background-color: #d9dcd6;
+    background-color: var(--background-color);
 }
 
 /* Header Styles */
 /* Style the header section with padding, font-family, background color, and text color */
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    font-family: var(--font-primary);
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* Style the header title with inline-block display and font size */
@@ -28,7 +43,7 @@ body {
 
 /* Style specific text in the header title with a different color */
 .header h1 .seo {
-    color: #d9dcd6;
+    color: var(--background-color);
 }
 
 /* Style the navigation section in the header */
@@ -36,7 +51,7 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 20px;
 }
 
@@ -53,14 +68,20 @@ body {
 
 /* Style anchor tags to have white color and no underline */
 a {
-    color: #ffffff;
+    color: var(--text-color);
     text-decoration: none;
+}
+
+/* Add hover effect to links */
+a:hover {
+    color: var(--background-color);
+    text-decoration: underline;
 }
 
 /* General Text Styles */
 /* Set font size for all paragraph elements */
 p {
-    font-size: 16px;
+    font-size: var(--font-size-base);
 }
 
 /* Hero Section */
@@ -103,9 +124,9 @@ p {
     clear: both;
     float: right;
     width: 20%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-    color: #ffffff;
+    font-family: var(--font-secondary);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 /* Shared Benefit Styles */
@@ -135,9 +156,9 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    font-family: var(--font-secondary);
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
 }
 
 /* Set a maximum height for images within these sections */
@@ -160,11 +181,39 @@ p {
 .footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-primary);
     text-align: center;
 }
 
 /* Set font size for footer headings */
 .footer h2 {
     font-size: 20px;
+}
+
+/* Responsive Design */
+/* Adjust layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Reduce hero section height for smaller screens */
+    .hero {
+        height: 400px;
+    }
+
+    /* Adjust content and benefits sections to stack vertically */
+    .content,
+    .benefits {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    /* Center navigation items for smaller screens */
+    .header nav {
+        text-align: center;
+    }
+
+    /* Display navigation items in a column with spacing */
+    .header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
